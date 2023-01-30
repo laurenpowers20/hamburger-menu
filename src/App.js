@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import HamburgerMenu from "./HamburgerMenu";
+import "./App.css";
+import { Routes, Route } from "react-router-dom";
+import PageOne from "./PageOne";
+import PageTwo from "./PageTwo";
+import PageThree from "./PageThree";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
+    <>
+      <HamburgerMenu />
+
+      <Routes>
+        <Route path="/pageone" element={<PageOne />} />
+        <Route path="/pagetwo" element={<PageTwo />} />
+        <Route path="/pagethree" element={<PageThree />} />
+      </Routes>
+      <div className="center">
+        <a href="https://react-portfolio-lauren-powers.netlify.app/">
+          <button className="button-54">Back to Lil' Portfolio</button>
         </a>
-      </header>
-    </div>
+      </div>
+    </>
   );
 }
 
