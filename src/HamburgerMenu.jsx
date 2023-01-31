@@ -33,7 +33,7 @@ function HamburgerMenu() {
               onClick={() => closeMenu()}
               exact
             >
-              Page One
+              Burger One
             </NavLink>
           </li>
           <li>
@@ -43,7 +43,7 @@ function HamburgerMenu() {
               onClick={() => closeMenu()}
               exact
             >
-              Page Two
+              Burger Two
             </NavLink>
           </li>
           <li>
@@ -53,7 +53,7 @@ function HamburgerMenu() {
               onClick={() => closeMenu()}
               exact
             >
-              Page Three
+              Burger Three
             </NavLink>
           </li>
         </ul>

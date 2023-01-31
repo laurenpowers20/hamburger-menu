@@ -2,11 +2,16 @@
 body {
   font-family: "Life Savers", cursive;
   background-image: url(background.jpg);
+  text-align: center;
 }
 
 h1 {
   font-size: 80px;
   text-align: center;
+}
+
+.burger-image {
+  height: 250px;
 }
 
 .nav-bar {
@@ -103,7 +108,7 @@ a {
 
 @media only screen and (max-width: 825px) {
   h1 {
-    font-size: 60px;
+    font-size: 50px;
     padding-top: 100px;
   }
 
@@ -114,6 +119,6 @@ a {
   .mobile {
     display: block;
     text-align: center;
-    font-size: 45px;
+    font-size: 40px;
   }
 }
