@@ -15,6 +15,8 @@ function HamburgerMenu() {
   return (
     <>
       <h1>Hamburger Menu</h1>
+      <h2 className="desktop">Click Hamburger Logo</h2>
+      <h2 className="mobile">Tap Hamburger Logo</h2>
       <nav className="nav-bar">
         <button onClick={handleToggle}>
           {navbarOpen ? (

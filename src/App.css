@@ -13,6 +13,15 @@ h1 {
   position: relative;
 }
 
+.desktop {
+  font-size: 60px;
+  text-align: center;
+}
+
+.mobile {
+  display: none;
+}
+
 .nav-bar button {
   position: fixed;
   top: 20px;
@@ -96,5 +105,15 @@ a {
   h1 {
     font-size: 60px;
     padding-top: 100px;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+    text-align: center;
+    font-size: 45px;
   }
 }
