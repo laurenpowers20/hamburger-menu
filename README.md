@@ -188,5 +188,31 @@ const closeMenu = () => {
         <ul className={`menu-nav ${navbarOpen ? " show-menu" : ""}`}>
 ```
 
+We can make some classNames using the ternary operator in the `<ul>` tag using interpolation. Yeah you can do that, React is so cool. Notice we put it in curly braces since it's JavaScript.
+
+20. When you click on your NavLinks, you'll probably want the menu to close back up. So stick that closeMenu functions we defined on top right in NavLinks
+
+```javascript
+<li>
+<NavLink
+   to="/pageone"
+    onClick={closeMenu}>
+    Burger One
+</NavLink>
+  </li>
+  <li>
+<NavLink
+    to="/pagetwo"
+    onClick={closeMenu}>
+    Burger Two
+</NavLink>
+  </li>
+```
+
+
 
 ....instructions are still in progress! I gotta go be a human being so I'll finish later. Come back soon.
+
+```
+
+```

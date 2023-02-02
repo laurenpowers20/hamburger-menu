@@ -30,7 +30,7 @@ function HamburgerMenu() {
             <NavLink
               to="/pageone"
               activeClassName="active-link"
-              onClick={() => closeMenu()}
+              onClick={closeMenu}
               exact
             >
               Burger One
@@ -40,7 +40,7 @@ function HamburgerMenu() {
             <NavLink
               to="/pagetwo"
               activeClassName="active-link"
-              onClick={() => closeMenu()}
+              onClick={closeMenu}
               exact
             >
               Burger Two
@@ -50,7 +50,7 @@ function HamburgerMenu() {
             <NavLink
               to="/pagethree"
               activeClassName="active-link"
-              onClick={() => closeMenu()}
+              onClick={closeMenu}
               exact
             >
               Burger Three
