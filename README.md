@@ -141,13 +141,13 @@ return (
 );
 ```
 
-16. Navigate back to Hamburger.jsx. Import
+16. Navigate back to Hamburger.jsx. Import NavLink up top.
 
 ```javascript
 import { NavLink } from "react-router-dom";
 ```
 
-17. Link up your NavLink routes in those <li> tags. I keep the <li> tags becuase that's how you make a <nav> by convention. Some CSS will take the bullet points off. Do what ya want though!
+17. Link up your NavLink routes in those `<li>` tags. I keep the `<li>` tags becuase that's how you make a `<nav>` by convention. Some CSS will take the bullet points off. Do what ya want though!
 
 ```javascript
 <li>
@@ -209,10 +209,54 @@ We can make some classNames using the ternary operator in the `<ul>` tag using i
   </li>
 ```
 
+21. That was a lot. Let's style it! Here's my CSS. Alter it, do what you like. I positioned those buttons on the top left.
 
+```css
+.nav-bar button {
+  position: fixed;
+  top: 20px;
+  left: 10px;
+  z-index: 10;
+  cursor: pointer;
+  color: black;
+  border-radius: 10px;
+  background-color: transparent;
+  border: none;
+}
 
-....instructions are still in progress! I gotta go be a human being so I'll finish later. Come back soon.
+.menu-nav {
+  overflow-y: scroll;
+  list-style: none;
+  position: fixed;
+  top: 0;
+  background: transparent;
+  left: 0px;
+  bottom: 0;
+  height: 100vh;
+  width: 0;
+  overflow: hidden;
+  max-width: 290px;
+  z-index: 9;
+}
 
+.menu-nav.show-menu {
+  width: 100%;
+  background: #fa8072;
+}
+
+a {
+  display: block;
+  padding: 20px 40px;
+  font-size: 3em;
+  text-decoration: none;
+  color: #3fffd2;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.menu-nav li:first-child {
+  margin-top: 7rem;
+}
 ```
 
-```
+Hope it was fun!
