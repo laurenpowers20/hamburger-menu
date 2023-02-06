@@ -24,7 +24,7 @@ function HamburgerMenu() {}
 export default HamburgerMenu;
 ```
 
-4. We're going to need to import a few things here. Since we're here, lets bring in our useState like so:
+4. We're going to need to import a few things here. Since we're here, let's bring in our useState like so:
 
 ```javascript
 import { useState } from "react";
@@ -44,7 +44,7 @@ import { GrClose } from "react-icons/gr";
 import { useState } from "react";
 ```
 
-6. Mmmk, we are getting there. Now, lets add our destructed array for our useState. Set him to false. Your JSX function should look like this thang so far.
+6. Mmmk, we are getting there. Now, let's add our destructed array for our useState. Set him to false. Your JSX function should look like this thang so far.
 
 ```javascript
 import { useState } from "react";
@@ -62,7 +62,7 @@ export default HamburgerMenu;
 ```javascript
 return (
   <nav className="nav-bar">
-    <button>
+    <button> //I made these a button so accessibility software will know this is meant to be clicked.
       <GrClose /> //icon
       <GiHamburger /> //icon
     </button>
@@ -76,7 +76,7 @@ return (
 );
 ```
 
-8. I'm going to use [React-Router](https://reactrouter.com/en/main) for this. I use Browser Router all the time. It's the best. Go to your terminial and install it.
+8. I'm going to use [React-Router](https://reactrouter.com/en/main) for this. I use Browser Router all the time. It's the best. Go to your terminal and install it.
 
 ```bash
 npm install react-router-dom
@@ -147,7 +147,7 @@ return (
 import { NavLink } from "react-router-dom";
 ```
 
-17. Link up your NavLink routes in those `<li>` tags. I keep the `<li>` tags becuase that's how you make a `<nav>` by convention. Some CSS will take the bullet points off. Do what ya want though!
+17. Link up your NavLink routes in those `<li>` tags. I keep the `<li>` tags because that's how you make a `<nav>` by convention. Some CSS will take the bullet points off.
 
 ```javascript
 <li>
@@ -175,7 +175,7 @@ const closeMenu = () => {
 };
 ```
 
-19. And now...[ternary operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator). Just read through it slowly and you'll understand what's happening. I like to say it out loud sometimes. "Is the nav bar open? If yes show close button. If not, show hamburger menu icon."
+19. And now...[ternary operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator). Just read through it slowly and you'll understand what's happening. I like to say it out loud sometimes. "Is the nav bar open? If yes show the close button. If not, show the hamburger menu icon."
 
 ```javascript
 <button onClick={handleToggle}>
@@ -190,7 +190,7 @@ const closeMenu = () => {
 
 We can make some classNames using the ternary operator in the `<ul>` tag using interpolation. Yeah you can do that, React is so cool. Notice we put it in curly braces since it's JavaScript.
 
-20. When you click on your NavLinks, you'll probably want the menu to close back up. So stick that closeMenu functions we defined on top right in NavLinks
+20. When you click on your NavLinks, you'll probably want the menu to close back up. So stick those closeMenu functions we defined on the top right in NavLinks.
 
 ```javascript
 <li>
@@ -209,7 +209,7 @@ We can make some classNames using the ternary operator in the `<ul>` tag using i
   </li>
 ```
 
-21. That was a lot. Let's style it! Here's my CSS. Alter it, do what you like. I positioned those buttons on the top left.
+21. That was a lot. Let's style it! Here's my CSS. Alter it, customize it, do what you like. I positioned those buttons on the top left.
 
 ```css
 .nav-bar button {
