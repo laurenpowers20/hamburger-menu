@@ -62,7 +62,7 @@ export default HamburgerMenu;
 ```javascript
 return (
   <nav className="nav-bar">
-    <button> //I made these a button so accessibility software will know this is meant to be clicked.
+    <button> //I made these buttons so accessibility software will know this is meant to be clicked.
       <GrClose /> //icon
       <GiHamburger /> //icon
     </button>
