@@ -16,7 +16,7 @@ function App() {
         <Route path="/pagethree" element={<PageThree />} />
       </Routes>
       <div className="center">
-        <a href="https://react-portfolio-lauren-powers.netlify.app/">
+        <a href="https://react-portfolio-lauren-powers.netlify.app/features">
           <button className="button-54">Back to Lil' Portfolio</button>
         </a>
       </div>
