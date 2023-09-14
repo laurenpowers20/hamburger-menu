@@ -17,7 +17,7 @@ function App() {
       </Routes>
       <div className="center">
         <a href="https://react-portfolio-lauren-powers.netlify.app/features">
-          <button className="button-54">Back to Lil' Portfolio</button>
+          <button className="button-54">Back</button>
         </a>
       </div>
     </>
